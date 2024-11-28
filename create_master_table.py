@@ -3,13 +3,14 @@ from geopy.geocoders import Nominatim
 from datetime import datetime
 from meteostat import Daily, Point, Hourly
 
+#This script consolidates the output from parse_txt_files into a single .csv file, grabbing weather data from meteostat
 
 def process_csv(input_file):
     # File paths
     master_table_output_file = 'master_table_output.csv'
     amtrak_station_csv = 'List_of_Amtrak_stations_combined.csv'
 
-    geolocator = Nominatim(user_agent="geoapiWeatherDSGroupProj")
+    geolocator = Nominatim(user_agent="geoapiWeatherDSGroupProj") #Need unqiue project identifier or else don't work
 
     # Read the input files
     input_df = pd.read_csv(input_file)
