@@ -97,6 +97,7 @@ def process_folder(input_folder, output_folder):
         for file in files:
             if file.endswith(".zip"):
                 zip_path = os.path.join(root, file)
+                # Most are zipped, manually unzipping would be a pain
                 with zipfile.ZipFile(zip_path, "r") as zip_ref:
                     # Create a new folder to extract files temporarily
                     temp_extract_folder = os.path.join(root, f"temp_extracted_{os.path.splitext(file)[0]}")
