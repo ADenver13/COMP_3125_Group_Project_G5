@@ -7,8 +7,8 @@ from meteostat import Daily, Point, Hourly
 
 def process_csv(input_file):
     # File paths
-    master_table_output_file = 'master_table_output.csv'
-    amtrak_station_csv = 'List_of_Amtrak_stations_combined.csv'
+    master_table_output_file = '..//..//data//master_table_output.csv' # If running from new download, change paths
+    amtrak_station_csv = '..//..//data//List_of_Amtrak_stations_combined.csv'
 
     geolocator = Nominatim(user_agent="geoapiWeatherDSGroupProj") #Need unqiue project identifier or else don't work
 

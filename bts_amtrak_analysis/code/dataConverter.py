@@ -32,4 +32,4 @@ print(len(data["Rail Transit"]))
 df = pd.DataFrame(data)
 
 #save to csv
-df.to_csv("Amtrak_Active_Railroads.csv", index=False)
+df.to_csv("..//Data//Amtrak_Active_Railroads.csv", index=False)

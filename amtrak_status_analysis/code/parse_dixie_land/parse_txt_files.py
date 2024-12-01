@@ -130,7 +130,7 @@ def process_folder(input_folder, output_folder):
     else:
         print("All files processed successfully.")
 
-input_folder = "2023/2023"
-output_folder = "2023_TEST/2023"
+input_folder = "..//..//data//2023/2023" # If running from new download, change paths
+output_folder = "..//..//data//2023_TEST/2023"
 
 process_folder(input_folder, output_folder)
